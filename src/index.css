@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,600;6..12,800&display=swap");
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+body {
+  background: #221410;
+}
+.heading {
+  font-family: Nunito Sans;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: linear-gradient(180deg, #fdb833 0%, #221410 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
