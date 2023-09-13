@@ -41,8 +41,8 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:w-[55%] md:h-[100%] md:flex items-center ">
-            <Image src={Duck} alt="duck" />
+          <div className="-mt-[50px] md:-mt-0 mb-[30px] md:mb-0 md:w-[55%] md:h-[100%] md:flex items-center ">
+            <Image src={Duck} alt="duck" className="h-[300px] md:h-auto" />
           </div>
         </div>
       </div>
