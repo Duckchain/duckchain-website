@@ -41,7 +41,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="-mt-[50px] md:-mt-0 mb-[30px] md:mb-0 md:w-[55%] md:h-[100%] md:flex items-center ">
+          <div className="-mt-[50px] md:-mt-0 mb-[30px] md:mb-0 md:w-[55%] md:h-[100%] md:flex items-center mix-blend-lighten">
             <Image src={Duck} alt="duck" className="h-[300px] md:h-auto" />
           </div>
         </div>
@@ -85,7 +85,7 @@ const Home = () => {
       </section>
       <section className="flex w-full md:h-screen">
         <div className="container mx-auto w-[85%] flex items-center justify-between gap-6 flex-col md:flex-row">
-          <div className="md:w-1/3 text-left">
+          <div className="md:w-1/3 text-left mix-blend-lighten">
             <h1 className="text-[30px] text-white">
               Made for <span className="text-[#FDB833]">mass adoption.</span>
             </h1>
@@ -161,7 +161,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="md:w-1/3">
+          <div className="md:w-1/3 mix-blend-lighten">
             <Image src={Coin} alt="coin" />
           </div>
         </div>

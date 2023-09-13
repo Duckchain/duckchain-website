@@ -6,7 +6,7 @@ import CustomButton from "../button";
 const Header = () => {
   return (
     <>
-      <div className="flex w-full sticky top-0 z-50 bg-[#000]">
+      <div className="flex w-full sticky top-0 z-50 bg-[#221410]">
         <div className="container mx-auto w-[85%] flex justify-between h-[70px] items-center ">
           <div>
             <Image src={Logo} alt="logo" />
