@@ -1,6 +1,6 @@
 import { CustomButton, Image } from "../../components";
-import Duck from "../../assets/images/duck.svg";
-import Coin from "../../assets/images/coin.svg";
+import Duck from "../../assets/images/duck-bounce-2.gif";
+import Coin from "../../assets/images/duck-bounce-1.gif";
 import { Card, CustomCard } from "../../components/card";
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="hidden md:w-[65%] md:h-[100%] md:flex items-center">
+          <div className="hidden md:w-[55%] md:h-[100%] md:flex items-center ">
             <Image src={Duck} alt="duck" />
           </div>
         </div>
@@ -161,8 +161,8 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="md:w-1/2">
-            <Image src={Coin} alt="coin" className="-m-[80px]" />
+          <div className="md:w-1/3">
+            <Image src={Coin} alt="coin" />
           </div>
         </div>
       </section>

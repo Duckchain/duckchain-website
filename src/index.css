@@ -3,7 +3,8 @@
   font-family: "Nunito Sans", sans-serif;
 }
 body {
-  background: #221410;
+  /* background: #221410; */
+  background: #000;
 }
 .heading {
   font-family: Nunito Sans;
