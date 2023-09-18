@@ -2,6 +2,7 @@ import Image from "../../components/image";
 import DuckBuild from "../../assets/images/duck-build.png";
 import Duck from "../../assets/images/duck.png";
 import { CustomButton } from "../../components";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const Build = () => {
   return (
@@ -59,7 +60,7 @@ const Build = () => {
       <section className="text-center flex justify-center mb-[100px] ">
         <div className="container mx-auto w-[80%]">
           <h1 className="text-[30px] md:text-[60px] font-[900] text-white leading-tight">
-            The <span className="text-[#FDB833]">scaling technology</span> that
+            The <span className="text-[#EFCF24]">scaling technology</span> that
             has garnered the most widespread adoption.
           </h1>
         </div>
@@ -69,7 +70,7 @@ const Build = () => {
           <div className="flex items-center w-full justify-between">
             <div className="w-1/2">
               <h1 className="border-[4px] border-r-0 border-b-0 border-l-[#FDB833] border-t-0 p-4 md:text-[30px] text-white font-[700]">
-                Duck Chain (DAC)
+                Duck Chain DPOS
               </h1>
               <ul
                 style={{ listStyle: "disc" }}
@@ -85,19 +86,8 @@ const Build = () => {
               <div className="py-8 flex">
                 <CustomButton
                   color="red"
-                  label="Duckcoin"
-                  style={{
-                    background: "#FDB833",
-                    borderRadius: "20px",
-                    padding: "10px 20px",
-                    color: "#fff",
-                    textTransform: "capitalize",
-                    fontSize: "12px",
-                  }}
-                />
-                <CustomButton
-                  color="red"
                   label="Learn More"
+                  icon={<FiArrowUpRight />}
                   style={{
                     background: "transparent",
                     borderRadius: "20px",
@@ -105,6 +95,7 @@ const Build = () => {
                     color: "#fff",
                     textTransform: "capitalize",
                     fontSize: "12px",
+                    textDecoration: "underline",
                   }}
                 />
               </div>
@@ -113,14 +104,14 @@ const Build = () => {
               <Image
                 src={Duck}
                 alt="duck"
-                className="blur-[2px] bg-contain h-[300px] w-[300px] -mt-[40px]"
+                className=" bg-contain h-[300px] w-[300px] -mt-[40px]"
               />
             </div>
           </div>
           <div className="flex items-center w-full justify-between flex-row-reverse">
             <div className="w-1/2">
               <h1 className="border-[5px] border-r-0 border-b-0 border-l-[#9747FF] border-t-0 p-4 md:text-[30px] text-white font-[700]">
-                DuckVM
+                BNB Duckchain DRC20
               </h1>
               <ul
                 style={{ listStyle: "disc" }}
@@ -136,19 +127,8 @@ const Build = () => {
               <div className="py-8 flex">
                 <CustomButton
                   color="red"
-                  label="Build Now"
-                  style={{
-                    background: "#FDB833",
-                    borderRadius: "20px",
-                    padding: "10px 20px",
-                    color: "#fff",
-                    textTransform: "capitalize",
-                    fontSize: "12px",
-                  }}
-                />
-                <CustomButton
-                  color="red"
                   label="Learn More"
+                  icon={<FiArrowUpRight />}
                   style={{
                     background: "transparent",
                     borderRadius: "20px",
@@ -156,6 +136,7 @@ const Build = () => {
                     color: "#fff",
                     textTransform: "capitalize",
                     fontSize: "12px",
+                    textDecoration: "underline",
                   }}
                 />
               </div>
@@ -164,66 +145,7 @@ const Build = () => {
               <Image
                 src={Duck}
                 alt="duck"
-                className="blur-[2px] bg-contain  h-[300px] w-[300px] -mt-[40px]"
-              />
-            </div>
-          </div>
-          <div className="flex items-center w-full justify-between">
-            <div className="w-1/2">
-              <h1 className="border-[5px] border-r-0 border-b-0 border-l-[#E56428] border-t-0 p-4 md:text-[30px] text-white font-[700]">
-                DuckDAO
-              </h1>
-              <ul
-                style={{ listStyle: "disc" }}
-                className="ml-8 py-2 leading-relaxed text-[rgba(255,255,255,.5)] text-[12px] md:text-[14px]"
-              >
-                <li>
-                  Implementation of DuckDAO: Decentralized Autonomous
-                  Organization.
-                </li>
-                <li>
-                  Token holders participation in protocol upgrades and
-                  alterations.
-                </li>
-                <li>Community-driven development and decision-making.</li>
-                <li>Interoperability and Cross-Chain Communication</li>
-                <li>
-                  Duckbridge: Enabling seamless cross-chain communication.
-                </li>
-                <li>Collaborating with diverse blockchain ecosystems.</li>
-              </ul>
-              <div className="py-8 flex">
-                <CustomButton
-                  color="red"
-                  label="Duckcoin"
-                  style={{
-                    background: "#FDB833",
-                    borderRadius: "20px",
-                    padding: "10px 20px",
-                    color: "#fff",
-                    textTransform: "capitalize",
-                    fontSize: "12px",
-                  }}
-                />
-                <CustomButton
-                  color="red"
-                  label="Learn More"
-                  style={{
-                    background: "transparent",
-                    borderRadius: "20px",
-                    padding: "10px 20px",
-                    color: "#fff",
-                    textTransform: "capitalize",
-                    fontSize: "12px",
-                  }}
-                />
-              </div>
-            </div>
-            <div className="w-1/3 ">
-              <Image
-                src={Duck}
-                alt="duck"
-                className="blur-[2px] bg-contain  h-[300px] w-[300px] -mt-[40px]"
+                className="bg-contain  h-[300px] w-[300px] -mt-[40px]"
               />
             </div>
           </div>

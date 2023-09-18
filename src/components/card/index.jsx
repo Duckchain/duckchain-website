@@ -33,12 +33,12 @@ const Card = ({ title, text }) => {
   );
 };
 
-const CustomCard = ({ color, text, title, count, label }) => {
+const CustomCard = ({ color, text, title, count, label, ...children }) => {
   return (
     <>
-      <div className="md:p-10 py-5 md:py-0">
+      <div className="md:p-10 py-5 md:py-0" {...children}>
         <h1
-          className={`border-[2px] border-t-0 border-r-0 border-b-0 px-4 md:text-[28px] text-white font-[400]`}
+          className={`border-[2px] border-t-0 border-r-0 border-b-0 px-4 md:text-[28px] text-white font-[400] leading-tight`}
           style={{ borderLeftColor: `#${color}` }}
         >
           {title}
@@ -47,23 +47,25 @@ const CustomCard = ({ color, text, title, count, label }) => {
           {text}
         </p>
         <span className="relative">
-          <span className="absolute left-0">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="5"
-              height="5"
-              viewBox="0 0 5 5"
-              fill="none"
-            >
-              <circle
-                cx="2.5"
-                cy="2.5"
-                r="2.5"
-                transform="matrix(1 0 0 -1 0 5)"
-                fill={`#${color}`}
-              />
-            </svg>
-          </span>
+          {color && (
+            <span className="absolute left-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="5"
+                height="5"
+                viewBox="0 0 5 5"
+                fill="none"
+              >
+                <circle
+                  cx="2.5"
+                  cy="2.5"
+                  r="2.5"
+                  transform="matrix(1 0 0 -1 0 5)"
+                  fill={`#${color}`}
+                />
+              </svg>
+            </span>
+          )}
           <h1 className="md:text-[28px] text-white font-[400] ml-1 py-2 md:py-0">
             {count}
           </h1>
