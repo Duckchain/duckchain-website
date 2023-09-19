@@ -17,6 +17,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.show {
+  transition: all 300ms ease-in-out;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
