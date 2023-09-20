@@ -186,13 +186,13 @@ const Community = () => {
 const MobileMenu = () => {
   return (
     <>
-      <div className="drawer md:hidden">
+      <div className="drawer md:hidden ">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content ">{/* Page content here */}</div>
         <div className="drawer-side mt-[70px] z-50 ">
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
 
-          <ul className="menu bg-base-200 min-h-full w-full p-5">
+          <ul className="menu min-h-full w-full p-5 bg-[rgba(0,0,0,2)] text-white">
             <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
               <details>
                 <summary>Ecosystem</summary>

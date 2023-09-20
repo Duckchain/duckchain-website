@@ -110,7 +110,7 @@ const Header = () => {
               {!openNav ? (
                 <MenuIcon />
               ) : (
-                <FiX className="text-[30px] text-[rgba(255,255,255,0.8)]" />
+                <FiX className="text-[40px] text-[rgba(255,255,255,0.8)] bg-[#FDB833] rounded-[10px] p-1" />
               )}
             </label>
           </div>
