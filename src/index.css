@@ -20,6 +20,25 @@ body {
 .show {
   transition: all 300ms ease-in-out;
 }
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > *:not(ul):not(details):not(.menu-title)
+  ):not(.active):hover,
+:where(
+    .menu
+      li:not(.menu-title):not(.disabled)
+      > details
+      > summary:not(.menu-title)
+  ):not(.active):hover {
+  cursor: pointer;
+  background-color: transparent !important;
+  --tw-text-opacity: 1;
+  color: hsl(var(--bc) / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

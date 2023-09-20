@@ -233,6 +233,27 @@ const Book = () => {
     </>
   );
 };
+const MenuIcon = () => {
+  return (
+    <>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="15"
+        viewBox="0 0 22 15"
+        fill="none"
+      >
+        <path
+          d="M1 1.69141H20.3846M1 7.69141H20.3846M1 13.6914H20.3846"
+          stroke="white"
+          strokeWidth="2"
+          strokeMiterlimit="10"
+          strokeLinecap="round"
+        />
+      </svg>
+    </>
+  );
+};
 export {
   LogoYellow,
   LogoWhite,
@@ -242,4 +263,5 @@ export {
   Telegram,
   GlobeIcon,
   Book,
+  MenuIcon,
 };

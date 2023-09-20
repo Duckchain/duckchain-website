@@ -115,7 +115,7 @@ const Explore = () => {
         <span>
           <GlobeIcon />
         </span>
-        <h1>Resources</h1>
+        <h1>Explore</h1>
       </div>
       <div>
         <ul>
@@ -183,4 +183,160 @@ const Community = () => {
     </>
   );
 };
-export { Ecosystem, Build, Resources, Explore, Community };
+const MobileMenu = () => {
+  return (
+    <>
+      <div className="drawer md:hidden">
+        <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content ">{/* Page content here */}</div>
+        <div className="drawer-side mt-[70px] z-50 ">
+          <label htmlFor="my-drawer" className="drawer-overlay"></label>
+
+          <ul className="menu bg-base-200 min-h-full w-full p-5">
+            <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
+              <details>
+                <summary>Ecosystem</summary>
+                <ul>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">
+                      Synoptic Finance
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      The Decentralized Exchange Revolution
+                    </span>
+                  </li>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">Duckswap</span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      A decentralized exchange where you can swap and provide
+                      liquidity
+                    </span>
+                  </li>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">
+                      Synoptic Finance
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      The Decentralized Exchange Revolution
+                    </span>
+                  </li>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">
+                      Synoptic Finance
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      The Decentralized Exchange Revolution
+                    </span>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
+              <details>
+                <summary>Build</summary>
+                <ul>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">
+                      Network Documentation
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      Official Network and Program Libary docs
+                    </span>
+                  </li>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">
+                      Native Block Explorer
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      Explore Networks blockchain in real time
+                    </span>
+                  </li>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">
+                      GitHub Repository
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      Checkout templates and packages for integrating or
+                      building on Duckchain
+                    </span>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
+              <details>
+                <summary>Resources</summary>
+                <ul>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">Whitepaper</span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      Utility and Tokenomics
+                    </span>
+                  </li>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">Blog</span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      The latest news, product updates, thought Leadership and
+                      more from Duckchain
+                    </span>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
+              <details>
+                <summary>Community</summary>
+                <ul>
+                  <li className=" py-2 flex cursor-pointer">
+                    <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
+                      <Discord /> Discord
+                    </span>
+                  </li>
+                  <li className=" py-2 flex cursor-pointer">
+                    <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
+                      <Github /> Github
+                    </span>
+                  </li>
+                  <li className=" py-2 flex cursor-pointer">
+                    <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
+                      <Twitter /> Twitter
+                    </span>
+                  </li>
+                  <li className=" py-2 flex cursor-pointer">
+                    <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
+                      <Telegram /> Telegram
+                    </span>
+                  </li>
+                </ul>
+              </details>
+            </li>
+            <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
+              <details>
+                <summary>Explore</summary>
+                <ul>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">
+                      Duckchain DPOS
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      The native chain for Duckchain
+                    </span>
+                  </li>
+                  <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
+                    <span className="text-[14px] font-[700]">
+                      BNB Duckchain DRC20
+                    </span>
+                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                      The layer 2 for BNB chain
+                    </span>
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+};
+export { Ecosystem, Build, Resources, Explore, Community, MobileMenu };

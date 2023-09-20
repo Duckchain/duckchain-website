@@ -4,15 +4,23 @@ import Links from "../link";
 import CustomButton from "../button";
 import { Link } from "react-router-dom";
 import WhitePaper from "../../assets/DuckChain-whitepaper.pdf";
-import { FiChevronDown } from "react-icons/fi";
+import { FiChevronDown, FiX } from "react-icons/fi";
 import { useState } from "react";
-import { Build, Community, Ecosystem, Explore, Resources } from "../menu";
+import {
+  Build,
+  Community,
+  Ecosystem,
+  Explore,
+  MobileMenu,
+  Resources,
+} from "../menu";
+import { MenuIcon } from "../icons";
 
 const Header = () => {
   const [isOpen, setisOpen] = useState(false);
   const [direction, setDirection] = useState(0);
   const [display, setDisplay] = useState("");
-
+  const [openNav, setOpenNav] = useState(false);
   const showNav = (elem, val) => {
     setisOpen(elem);
     if (val === "ecosystem") {
@@ -35,7 +43,7 @@ const Header = () => {
         <div className="container mx-auto w-[85%] flex justify-between h-[70px] items-center ">
           <div>
             <Link to="/">
-              <Image src={Logo} alt="logo" />
+              <Image src={Logo} alt="logo" className="w-[150px] md:h-fit" />
             </Link>
           </div>
           <div className="md:flex gap-3 text-white hidden">
@@ -94,6 +102,18 @@ const Header = () => {
               {display}
             </div>
           </div>
+          <div
+            className="md:hidden flex cursor-pointer -mr-8"
+            onClick={() => setOpenNav(!openNav)}
+          >
+            <label htmlFor="my-drawer" className="drawer-button cursor-pointer">
+              {!openNav ? (
+                <MenuIcon />
+              ) : (
+                <FiX className="text-[30px] text-[rgba(255,255,255,0.8)]" />
+              )}
+            </label>
+          </div>
           <div>
             <a href={WhitePaper} target="_blank" rel="noreferrer">
               <CustomButton
@@ -113,10 +133,10 @@ const Header = () => {
           </div>
         </div>
       </div>
-
       {isOpen && (
         <div className="w-full bg-[rgba(0,0,0,0.5)]  top-0 h-screen fixed z-30"></div>
       )}
+      <MobileMenu />
     </>
   );
 };
