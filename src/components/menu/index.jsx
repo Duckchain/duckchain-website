@@ -226,7 +226,9 @@ const MobileMenu = () => {
           <ul className="menu min-h-full w-full p-5 bg-[rgba(0,0,0,2)] text-white">
             <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
               <details>
-                <summary>Ecosystem</summary>
+                <summary className="text-white active:text-white focus:text-white">
+                  Ecosystem
+                </summary>
                 <ul>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                     <span className="text-[14px] font-[700]">
@@ -264,7 +266,9 @@ const MobileMenu = () => {
             </li>
             <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
               <details>
-                <summary>Build</summary>
+                <summary className="text-white active:text-white focus:text-white">
+                  Build
+                </summary>
                 <ul>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                     <span className="text-[14px] font-[700]">
@@ -296,7 +300,9 @@ const MobileMenu = () => {
             </li>
             <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
               <details>
-                <summary>Resources</summary>
+                <summary className="text-white active:text-white focus:text-white">
+                  Resources
+                </summary>
                 <ul>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                     <span className="text-[14px] font-[700]">Whitepaper</span>
@@ -316,7 +322,9 @@ const MobileMenu = () => {
             </li>
             <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
               <details>
-                <summary>Community</summary>
+                <summary className="text-white active:text-white focus:text-white">
+                  Community
+                </summary>
                 <ul>
                   <li className=" py-2 flex cursor-pointer">
                     <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
@@ -371,7 +379,9 @@ const MobileMenu = () => {
             </li>
             <li className="border-b-[1px] border-[rgba(255,255,255,0.2)] py-2">
               <details>
-                <summary>Explore</summary>
+                <summary className="text-white active:text-white focus:text-white">
+                  Explore
+                </summary>
                 <ul>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                     <span className="text-[14px] font-[700]">
