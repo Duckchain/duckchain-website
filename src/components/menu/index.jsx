@@ -1,5 +1,5 @@
 import { Book, Discord, Github, GlobeIcon, Telegram, Twitter } from "../icons";
-
+import WhitePaper from "../../assets/DuckChain-whitepaper.pdf";
 const Ecosystem = () => {
   return (
     <>
@@ -14,7 +14,7 @@ const Ecosystem = () => {
           <li className="hover:bg-[rgba(253,184,51,0.20)] px-10 py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
             <span className="text-[14px] font-[700]">Synoptic Finance</span>
             <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-              The Decentralized Exchange Revolution
+              Transfer assets{" "}
             </span>
           </li>
           <li className="hover:bg-[rgba(253,184,51,0.20)] px-10 py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
@@ -24,15 +24,16 @@ const Ecosystem = () => {
             </span>
           </li>
           <li className="hover:bg-[rgba(253,184,51,0.20)] px-10 py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
-            <span className="text-[14px] font-[700]">Synoptic Finance</span>
+            <span className="text-[14px] font-[700]">Web Wallet</span>
             <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-              The Decentralized Exchange Revolution
+              A multi-chain web wallet to delegrate Duckcoin, swap, send and
+              receive tokens.
             </span>
           </li>
           <li className="hover:bg-[rgba(253,184,51,0.20)] px-10 py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
-            <span className="text-[14px] font-[700]">Synoptic Finance</span>
+            <span className="text-[14px] font-[700]">Wallet Extension</span>
             <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-              The Decentralized Exchange Revolution
+              A multi-chain Chrome extension for Crypto, NFTs, dApps and Web3.
             </span>
           </li>
         </ul>
@@ -93,7 +94,9 @@ const Resources = () => {
           <li className="hover:bg-[rgba(253,184,51,0.20)] px-10 py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
             <span className="text-[14px] font-[700]">Whitepaper</span>
             <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-              Utility and Tokenomics
+              <a href={WhitePaper} target="_blank" rel="noreferrer">
+                Utility and Tokenomics
+              </a>
             </span>
           </li>
           <li className="hover:bg-[rgba(253,184,51,0.20)] px-10 py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
@@ -160,22 +163,50 @@ const Community = () => {
         <ul>
           <li className="px-10 py-2 flex cursor-pointer">
             <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
-              <Discord /> Discord
+              <a
+                href="http://"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-5"
+              >
+                <Discord /> Discord
+              </a>
             </span>
           </li>
           <li className="px-10 py-2 flex cursor-pointer">
             <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
-              <Github /> Github
+              <a
+                href="https://github.com/Duckchain"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-5"
+              >
+                <Github /> Github
+              </a>
             </span>
           </li>
           <li className="px-10 py-2 flex cursor-pointer">
             <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
-              <Twitter /> Twitter
+              <a
+                href="https://twitter.com/Duckchain_coin"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-5"
+              >
+                <Twitter /> Twitter
+              </a>
             </span>
           </li>
           <li className="px-10 py-2 flex cursor-pointer">
             <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
-              <Telegram /> Telegram
+              <a
+                href="https://t.me/Duckchain_portal"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-5"
+              >
+                <Telegram /> Telegram
+              </a>
             </span>
           </li>
         </ul>
@@ -202,7 +233,7 @@ const MobileMenu = () => {
                       Synoptic Finance
                     </span>
                     <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-                      The Decentralized Exchange Revolution
+                      Transfer assets
                     </span>
                   </li>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
@@ -213,19 +244,19 @@ const MobileMenu = () => {
                     </span>
                   </li>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
-                    <span className="text-[14px] font-[700]">
-                      Synoptic Finance
-                    </span>
+                    <span className="text-[14px] font-[700]">Web Wallet</span>
                     <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-                      The Decentralized Exchange Revolution
+                      A multi-chain web wallet to delegrate Duckcoin, swap, send
+                      and receive tokens.
                     </span>
                   </li>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                     <span className="text-[14px] font-[700]">
-                      Synoptic Finance
+                      Wallet Extension
                     </span>
                     <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-                      The Decentralized Exchange Revolution
+                      A multi-chain Chrome extension for Crypto, NFTs, dApps and
+                      Web3.
                     </span>
                   </li>
                 </ul>
@@ -289,22 +320,50 @@ const MobileMenu = () => {
                 <ul>
                   <li className=" py-2 flex cursor-pointer">
                     <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
-                      <Discord /> Discord
+                      <a
+                        href="http://"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-5"
+                      >
+                        <Discord /> Discord
+                      </a>
                     </span>
                   </li>
                   <li className=" py-2 flex cursor-pointer">
                     <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
-                      <Github /> Github
+                      <a
+                        href="https://github.com/Duckchain"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-5"
+                      >
+                        <Github /> Github
+                      </a>
                     </span>
                   </li>
                   <li className=" py-2 flex cursor-pointer">
                     <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
-                      <Twitter /> Twitter
+                      <a
+                        href="https://twitter.com/Duckchain_coin"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-5"
+                      >
+                        <Twitter /> Twitter
+                      </a>
                     </span>
                   </li>
                   <li className=" py-2 flex cursor-pointer">
                     <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
-                      <Telegram /> Telegram
+                      <a
+                        href="https://t.me/Duckchain_portal"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-5"
+                      >
+                        <Telegram /> Telegram
+                      </a>
                     </span>
                   </li>
                 </ul>
