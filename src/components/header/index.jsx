@@ -37,7 +37,7 @@ const Header = () => {
                 className="text-[16px] flex items-center p-3 gap-2 rounded-[5px] hover:text-[#FDB833] ease-in duration-300"
                 icon={<FiChevronDown />}
               />
-              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[40px] -left-[90px] z-50 ecosystem-ul border border-[rgba(253,184,51,0.2)] border-t-0">
+              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[47px] -left-[90px] z-50 ecosystem-ul border border-[rgba(253,184,51,0.2)] ">
                 <div className="flex items-center gap-3 px-10 py-5">
                   <span>
                     <GlobeIcon />
@@ -88,7 +88,7 @@ const Header = () => {
                 className="text-[16px] flex items-center p-3 gap-2 rounded-[5px] hover:text-[#FDB833] ease-in duration-300"
                 icon={<FiChevronDown />}
               />
-              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[40px] -left-[90px] z-50 build border border-[rgba(253,184,51,0.2)] border-t-0">
+              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[47px] -left-[90px] z-50 build border border-[rgba(253,184,51,0.2)] ">
                 <div className="flex items-center gap-3 px-10 py-5">
                   <span>
                     <Book />
@@ -133,7 +133,7 @@ const Header = () => {
                 className="text-[16px] flex items-center p-3 gap-2 rounded-[5px] hover:text-[#FDB833] ease-in duration-300"
                 icon={<FiChevronDown />}
               />
-              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[40px] -left-[90px] z-50 resources border border-[rgba(253,184,51,0.2)] border-t-0">
+              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[47px] -left-[90px] z-50 resources border border-[rgba(253,184,51,0.2)] ">
                 <div className="flex items-center gap-3 px-10 py-5">
                   <span>
                     <Book />
@@ -168,7 +168,7 @@ const Header = () => {
                 className="text-[16px] flex items-center p-3 gap-2 rounded-[5px] hover:text-[#FDB833] ease-in duration-300"
                 icon={<FiChevronDown />}
               />
-              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[40px] -left-[90px] z-50 community border border-[rgba(253,184,51,0.2)] border-t-0">
+              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[47px] -left-[90px] z-50 community border border-[rgba(253,184,51,0.2)] ">
                 <div className="flex items-center gap-3 px-10 py-5">
                   <span>
                     <svg
@@ -247,7 +247,7 @@ const Header = () => {
                 className="text-[16px] flex items-center p-3 gap-2 rounded-[5px] hover:text-[#FDB833] ease-in duration-300"
                 icon={<FiChevronDown />}
               />
-              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[40px] -left-[90px] z-50 explore border border-[rgba(253,184,51,0.2)] border-t-0">
+              <div className="hidden absolute bg-[#151311] flex-col w-[300px] top-[47px] -left-[90px] z-50 explore border border-[rgba(253,184,51,0.2)] ">
                 <div className="flex items-center gap-3 px-10 py-5">
                   <span>
                     <GlobeIcon />
