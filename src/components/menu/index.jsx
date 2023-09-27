@@ -306,9 +306,15 @@ const MobileMenu = () => {
                 <ul>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                     <span className="text-[14px] font-[700]">Whitepaper</span>
-                    <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-                      Utility and Tokenomics
-                    </span>
+                    <a
+                      href={WhitePaper}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                        Utility and Tokenomics
+                      </span>
+                    </a>
                   </li>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                     <span className="text-[14px] font-[700]">Blog</span>
@@ -353,7 +359,7 @@ const MobileMenu = () => {
                   <li className=" py-2 flex cursor-pointer">
                     <span className="text-[14px] font-[700] flex gap-5 items-center hover:text-[rgba(239,207,36,0.8)]">
                       <a
-                        href="https://twitter.com/Duckchain_coin"
+                        href="https://x.com/0xDuckchain?t=GbLmyU0rIQv8U_Tf1o0N6Q&s=09"
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-5"
@@ -388,15 +394,16 @@ const MobileMenu = () => {
                       Duckchain DPOS
                     </span>
                     <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-                      The native chain for Duckchain
+                      Duckchain native EVM L1
                     </span>
                   </li>
                   <li className="hover:bg-[rgba(253,184,51,0.20)]  py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                     <span className="text-[14px] font-[700]">
-                      BNB Duckchain DRC20
+                      Duckchain zkEVM
                     </span>
                     <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-                      The layer 2 for BNB chain
+                      Duckchain low-cost and lightning-fast Ethereum L2
+                      blockchain powered Polygon CDK
                     </span>
                   </li>
                 </ul>

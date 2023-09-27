@@ -278,19 +278,22 @@ const Header = () => {
                 <div>
                   <ul>
                     <li className="hover:bg-[rgba(253,184,51,0.20)] px-10 py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
-                      <span className="text-[14px] font-[700]">
-                        Duckchain DPOS
-                      </span>
-                      <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-                        The native chain for Duckchain
-                      </span>
+                      <Link to="/dpos" className="flex flex-col">
+                        <span className="text-[14px] font-[700]">
+                          Duckchain DPOS
+                        </span>
+                        <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
+                          Duckchain native EVM L1
+                        </span>
+                      </Link>
                     </li>
                     <li className="hover:bg-[rgba(253,184,51,0.20)] px-10 py-2 flex flex-col cursor-pointer hover:rounded-[5px] mx-[2px] hover:border-[rgba(239,207,36,0.2)] hover:border-[0.5px] rounded-[5px] border-transparent border-[0.5px]">
                       <span className="text-[14px] font-[700]">
-                        BNB Duckchain DRC20
+                        Duckchain zkEVM
                       </span>
                       <span className="text-[12px] text-[rgba(255,255,255,0.5)]">
-                        The layer 2 for BNB chain
+                        Duckchain low-cost and lightning-fast Ethereum L2
+                        blockchain powered Polygon CDK
                       </span>
                     </li>
                   </ul>

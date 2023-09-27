@@ -49,6 +49,28 @@ body {
   display: flex;
   transition: all 300ms ease-in-out;
 }
+.custom-card:hover {
+  background-color: rgba(192, 131, 18, 0.5) !important;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.custom-card:hover .arrow {
+  width: 50px !important;
+  margin-left: 40px !important;
+
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+.arrow {
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

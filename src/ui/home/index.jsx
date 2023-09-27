@@ -1,12 +1,13 @@
-import { CustomButton, Image } from "../../components";
-import Duck from "../../assets/images/duck-bounce-2.gif";
-import Coin from "../../assets/images/duck-bounce-1.gif";
+import { CustomButton } from "../../components";
+// import Duck from "../../assets/images/duck-bounce-2.gif";
+// import Coin from "../../assets/images/duck-bounce-1.gif";
 import { Card, CustomCard } from "../../components/card";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const Home = () => {
   return (
     <>
-      <div className="flex w-full md:h-screen md:overflow-hidden">
+      <section className="flex w-full md:h-screen md:overflow-hidden">
         <div className="container mx-auto w-[85%] items-center flex flex-col md:flex-row">
           <div className="md:w-[65%] py-20 md:py-0">
             <div className="max-w-fit leading-tight">
@@ -42,24 +43,110 @@ const Home = () => {
             </div>
           </div>
           <div className="-mt-[50px] md:-mt-0 mb-[30px] md:mb-0 md:w-[55%] md:h-[100%] md:flex items-center mix-blend-lighten">
-            <Image src={Duck} alt="duck" className="h-[300px] md:h-auto" />
+            {/* <Image src={Duck} alt="duck" className="h-[300px] md:h-auto" /> */}
           </div>
         </div>
-      </div>
-      <section className="flex w-full ">
+      </section>
+      <section className="flex w-full pb-8">
         <div className="container mx-auto w-[85%]">
           <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-3">
             <Card
               text="Gain entry to our documents and commence the construction
-                  process"
+                  process."
               title="Build"
             />
             <Card
-              text="Gain entry to our documents and commence the construction process"
-              title="Stack"
+              text="Contribute to enhancing network security by assigning Duck Tokens."
+              title="Stake"
+              url="/benefits"
             />
             <Card text="Transfer assets" title="Bridge" />
           </div>
+        </div>
+      </section>
+      <section className="w-full text-center flex justify-center md:pt-[100px]">
+        <div className="container mx-auto w-[85%]">
+          <h1 className="text-[20px] md:text-[60px] font-[900] text-white leading-tight">
+            The <span className="text-[#EFCF24]">scaling technology</span> that
+            has garnered the most widespread adoption.
+          </h1>
+        </div>
+      </section>
+
+      <section className="container flex mx-auto w-[85%] pt-[80px] md:pt-[150px] flex-col gap-y-6">
+        <div className="flex items-center w-full justify-between md:flex-row-reverse">
+          <div className="md:w-1/2">
+            <h1 className="border-[4px] border-r-0 border-b-0 border-l-[#FDB833] border-t-0 p-4 md:text-[30px] text-white font-[700]">
+              Duck Chain DPOS
+            </h1>
+            <ul
+              style={{ listStyle: "disc" }}
+              className="ml-8 py-2 leading-relaxed text-[rgba(255,255,255,.5)] text-[12px] md:text-[14px]"
+            >
+              <li>Introducing Duck Authority Consensus (DAC) mechanism.</li>
+              <li>
+                Advantages of DAC over Proof of Work (PoW) and Proof of Stake
+                (PoS).
+              </li>
+              <li>Ensuring security, efficiency, and sustainability.</li>
+            </ul>
+            <div className="py-8 flex">
+              <CustomButton
+                color="red"
+                label="Learn More"
+                icon={<FiArrowUpRight />}
+                style={{
+                  background: "transparent",
+                  borderRadius: "20px",
+                  padding: "10px 20px",
+                  color: "#fff",
+                  textTransform: "capitalize",
+                  fontSize: "12px",
+                  textDecoration: "underline",
+                }}
+              />
+            </div>
+          </div>
+          <div className="w-1/3 "></div>
+        </div>
+        <div className="flex items-center w-full justify-between">
+          <div className="md:w-1/2">
+            <h1 className="border-[5px] border-r-0 border-b-0 border-l-[#9747FF] border-t-0 p-4 md:text-[30px] text-white font-[700]">
+              Duckchain zkEVM
+            </h1>
+            <ul
+              style={{ listStyle: "disc" }}
+              className="ml-8 py-2 leading-relaxed text-[rgba(255,255,255,.5)] text-[12px] md:text-[14px]"
+            >
+              <li>Introduction to DuckVM (Duckchain Virtual Machine).</li>
+              <li>
+                Supported programming languages for smart contract development.
+              </li>
+              <li>Seamlessly integrating DApps into the ecosystem.</li>
+            </ul>
+            <div className="py-8 flex">
+              <CustomButton
+                color="red"
+                label="Learn More"
+                icon={<FiArrowUpRight />}
+                style={{
+                  background: "transparent",
+                  borderRadius: "20px",
+                  padding: "10px 20px",
+                  color: "#fff",
+                  textTransform: "capitalize",
+                  fontSize: "12px",
+                  textDecoration: "underline",
+                }}
+              />
+            </div>
+          </div>
+          <div className="w-1/3 "></div>
+        </div>
+      </section>
+
+      <section className="flex w-full ">
+        <div className="container mx-auto  w-[85%]">
           <div className="w-full flex items-center justify-between my-[100px] flex-col md:flex-row">
             <div>
               <h1 className="text-[30px] md:text-[40px] font-[600] text-white">
@@ -83,17 +170,17 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="flex w-full md:h-screen">
-        <div className="container mx-auto w-[85%] flex items-center justify-between gap-6 flex-col md:flex-row">
+      <section className="flex w-full">
+        <div className="container mx-auto w-[85%] flex  justify-between gap-6 flex-col md:flex-row">
           <div className="md:w-1/3 text-left mix-blend-lighten">
             <h1 className="text-[30px] text-white">
               Made for <span className="text-[#FDB833]">mass adoption.</span>
             </h1>
-            <Image
+            {/* <Image
               src={Duck}
               alt="duck"
               className="text-left h-[400px] hidden md:flex"
-            />
+            /> */}
           </div>
           <div className="md:w-2/3">
             <div className="grid grid-cols-2 gap-5">
@@ -162,7 +249,7 @@ const Home = () => {
             </div>
           </div>
           <div className="md:w-1/3 mix-blend-lighten">
-            <Image src={Coin} alt="coin" />
+            {/* <Image src={Coin} alt="coin" /> */}
           </div>
         </div>
       </section>
