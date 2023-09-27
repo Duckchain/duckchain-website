@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
-
 /* eslint-disable react/prop-types */
-const Card = ({ title, text, url }) => {
+const Card = ({ title, text }) => {
   return (
     <>
       <div
@@ -11,27 +9,25 @@ const Card = ({ title, text, url }) => {
           border: "0.5px solid #FDB833",
         }}
       >
-        <Link to={url} className="flex items-center justify-between w-full">
-          <span>
-            <h1 className="text-[40px] text-white">{title}</h1>
-            <p className="text-white text-[12px] max-w-[200px]">{text}</p>
-          </span>
-          <span className="arrow">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="33"
-              height="30"
-              viewBox="0 0 33 30"
-              fill="none"
-            >
-              <circle cx="18" cy="15" r="15" fill="#FDB833" fillOpacity="0.5" />
-              <path
-                d="M23.756 15.5883C24.0813 15.2629 24.0813 14.7345 23.756 14.4091L19.5909 10.244C19.2655 9.91865 18.7371 9.91865 18.4117 10.244C18.0863 10.5694 18.0863 11.0979 18.4117 11.4233L21.158 14.167L13.1715 14.167C12.7108 14.167 12.3385 14.5392 12.3385 15C12.3385 15.4608 12.7108 15.833 13.1715 15.833L21.158 15.833L18.4143 18.5767C18.0889 18.9021 18.0889 19.4306 18.4143 19.756C18.7397 20.0813 19.2681 20.0813 19.5935 19.756L23.7586 15.5909L23.756 15.5883Z"
-                fill="white"
-              />
-            </svg>
-          </span>
-        </Link>
+        <span>
+          <h1 className="text-[40px] text-white">{title}</h1>
+          <p className="text-white text-[12px] max-w-[200px]">{text}</p>
+        </span>
+        <span className="arrow">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="33"
+            height="30"
+            viewBox="0 0 33 30"
+            fill="none"
+          >
+            <circle cx="18" cy="15" r="15" fill="#FDB833" fillOpacity="0.5" />
+            <path
+              d="M23.756 15.5883C24.0813 15.2629 24.0813 14.7345 23.756 14.4091L19.5909 10.244C19.2655 9.91865 18.7371 9.91865 18.4117 10.244C18.0863 10.5694 18.0863 11.0979 18.4117 11.4233L21.158 14.167L13.1715 14.167C12.7108 14.167 12.3385 14.5392 12.3385 15C12.3385 15.4608 12.7108 15.833 13.1715 15.833L21.158 15.833L18.4143 18.5767C18.0889 18.9021 18.0889 19.4306 18.4143 19.756C18.7397 20.0813 19.2681 20.0813 19.5935 19.756L23.7586 15.5909L23.756 15.5883Z"
+              fill="white"
+            />
+          </svg>
+        </span>
       </div>
     </>
   );

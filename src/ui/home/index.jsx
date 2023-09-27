@@ -22,7 +22,7 @@ const Home = () => {
               <p className="text-[12px] leading-tight py-3 max-w-[600px] text-[rgba(255,255,255,0.50)]">
                 Welcome to the world of Duckcoin (DuckChain), the leading
                 payment and blockchain token packed with incredible utilities!
-                Embrace the people's cryptocurrency and join the global
+                Embrace the people&apos;s cryptocurrency and join the global
                 community of Duckies as we venture into the realm of
                 decentralized finance.
               </p>
@@ -55,11 +55,17 @@ const Home = () => {
                   process."
               title="Build"
             />
-            <Card
-              text="Contribute to enhancing network security by assigning Duck Tokens."
-              title="Stake"
-              url="/benefits"
-            />
+            <a
+              href="https://duckcoin.xyz/bridge"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Card
+                text="Contribute to enhancing network security by assigning Duck Tokens."
+                title="Stake"
+              />
+            </a>
+
             <Card text="Transfer assets" title="Bridge" />
           </div>
         </div>
@@ -83,11 +89,8 @@ const Home = () => {
               style={{ listStyle: "disc" }}
               className="ml-8 py-2 leading-relaxed text-[rgba(255,255,255,.5)] text-[12px] md:text-[14px]"
             >
-              <li>Introducing Duck Authority Consensus (DAC) mechanism.</li>
-              <li>
-                Advantages of DAC over Proof of Work (PoW) and Proof of Stake
-                (PoS).
-              </li>
+              <li>introducing Duck delegated proof of stake consensus.</li>
+              <li>Building a Duckchain Dapps.</li>
               <li>Ensuring security, efficiency, and sustainability.</li>
             </ul>
             <div className="py-8 flex">
@@ -118,7 +121,10 @@ const Home = () => {
               style={{ listStyle: "disc" }}
               className="ml-8 py-2 leading-relaxed text-[rgba(255,255,255,.5)] text-[12px] md:text-[14px]"
             >
-              <li>Introduction to DuckVM (Duckchain Virtual Machine).</li>
+              <li>
+                Build with Duckchain low-cost and lightning-fast Ethereum L2
+                blockchain powered Polygon CDK.
+              </li>
               <li>
                 Supported programming languages for smart contract development.
               </li>
