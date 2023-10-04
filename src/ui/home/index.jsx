@@ -20,11 +20,9 @@ const Home = () => {
                 chain <span className="text-[#FDB833]">Dapps</span>.
               </h1>
               <p className="text-[12px] leading-tight py-3 max-w-[600px] text-[rgba(255,255,255,0.50)]">
-                Welcome to the world of Duckcoin (DuckChain), the leading
-                payment and blockchain token packed with incredible utilities!
-                Embrace the people&apos;s cryptocurrency and join the global
-                community of Duckies as we venture into the realm of
-                decentralized finance.
+                Welcome to the Duckchain ecosystem, the growing web3
+                infrastructure and solutions ecosystem. Refine yourself with the
+                ultimate web3 experience.
               </p>
               <div className="py-3">
                 <CustomButton
